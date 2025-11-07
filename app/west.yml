@@ -1,0 +1,15 @@
+# Copyright (c) 2025 XiNGRZ <hi@xingrz.me>
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr.git
+      revision: v4.2.1
+      clone-depth: 10
+      import:
+        name-allowlist:
+          - hal_espressif
+          - lvgl
+          - picolibc
+          - segger

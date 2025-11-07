@@ -1,0 +1,8 @@
+.DS_Store
+.venv
+.vscode
+.cache
+.west
+/build*
+/modules
+/zephyr

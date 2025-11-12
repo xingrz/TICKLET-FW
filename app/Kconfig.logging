@@ -1,0 +1,16 @@
+# Copyright (c) 2025 XiNGRZ <hi@xingrz.me>
+# SPDX-License-Identifier: Apache-2.0
+
+config TICKLET_UART_LOGGING
+	bool "Enable UART logging"
+	select LOG
+	select CONSOLE
+	select SERIAL
+	select UART_CONSOLE
+
+config TICKLET_RTT_LOGGING
+	bool "Enable RTT logging"
+	select LOG
+	select CONSOLE
+	select USE_SEGGER_RTT
+	select RTT_CONSOLE

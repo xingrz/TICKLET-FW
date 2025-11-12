@@ -1,0 +1,16 @@
+# Copyright (c) 2025 XiNGRZ <hi@xingrz.me>
+# SPDX-License-Identifier: Apache-2.0
+
+mainmenu "TICKLET"
+
+menu "TICKLET"
+
+rsource "Kconfig.logging"
+
+module = TICKLET
+module-str = ticklet
+source "subsys/logging/Kconfig.template.log_config"
+
+endmenu # TICKLET
+
+source "Kconfig.zephyr"

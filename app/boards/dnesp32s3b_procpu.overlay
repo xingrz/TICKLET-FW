@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2025 XiNGRZ <hi@xingrz.me>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	zephyr,user {
+		ticklet,input-event-codes = <INPUT_KEY_0>,
+					    <INPUT_KEY_1>,
+					    <INPUT_KEY_2>;
+		ticklet,output-gpios = <&io_expander 10 0>,
+				       <&io_expander 11 0>,
+				       <&io_expander 12 0>,
+				       <&io_expander 13 0>,
+				       <&io_expander 14 0>,
+				       <&io_expander 15 0>;
+		ticklet,leds = <&leds>;
+	};
+
+	leds: leds {};
+
+	buttons {
+		debounce-interval-ms = <0>;
+	};
+};

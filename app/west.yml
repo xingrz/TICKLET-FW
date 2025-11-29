@@ -4,8 +4,8 @@
 manifest:
   projects:
     - name: zephyr
-      url: https://github.com/zephyrproject-rtos/zephyr.git
-      revision: v4.2.1
+      url: https://github.com/xingrz/zephyr.git
+      revision: dnesp32s3b/dev
       clone-depth: 10
       import:
         name-allowlist:
